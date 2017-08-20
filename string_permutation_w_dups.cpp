@@ -50,7 +50,7 @@ int main()
       if(m.find(input[i]) != m.end())
 	m.find(input[i])->second++;
       else
-	m.insert(pair(input[i],1));
+	m.insert(make_pair(input[i],1));
     }
   vector<string> res;
   FindPermu(curr, m, res, n);
